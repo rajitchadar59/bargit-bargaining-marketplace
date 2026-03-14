@@ -182,14 +182,7 @@ The isolated interface for system administrators to oversee the marketplace.
 **Server-Side:** Node.js, Express.js, MongoDB Atlas, JSON Web Tokens (JWT), Bcrypt
 
 
-<img width="1919" height="916" alt="Image" src="https://github.com/user-attachments/assets/c98d75d0-f2d6-482e-a0ef-506a803a4134" />
-<img width="1918" height="912" alt="Image" src="https://github.com/user-attachments/assets/7743f604-5dd3-42c5-b798-dc16384df138" />
-<img width="1919" height="912" alt="Image" src="https://github.com/user-attachments/assets/214569c0-e186-4a74-a528-7ec2aeddc68d" />
-<img width="1900" height="911" alt="Image" src="https://github.com/user-attachments/assets/d36e03a5-9add-4269-9453-9630d1fd97de" />
-<img width="1898" height="909" alt="Image" src="https://github.com/user-attachments/assets/6f63361f-995d-4685-ab4e-bc85df0624c5" />
-<img width="1919" height="908" alt="Image" src="https://github.com/user-attachments/assets/9e4f025a-d996-4666-bceb-cc21f0472fb5" />
-<img width="1917" height="913" alt="Image" src="https://github.com/user-attachments/assets/c5fa78cc-e2cb-4772-a51f-031819a7f798" />
-<img width="1897" height="910" alt="Image" src="https://github.com/user-attachments/assets/a6c7a69d-e57c-4ca8-ab4c-0bfd32428945" />
+
 
 ```bash
 git clone [https://github.com/YOUR_GITHUB_USERNAME/bargit-nearby-bargain-marketplace.git](https://github.com/YOUR_GITHUB_USERNAME/bargit-nearby-bargain-marketplace.git)
