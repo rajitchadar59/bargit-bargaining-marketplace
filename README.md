@@ -60,7 +60,6 @@ Seamless purchasing process with integrated Razorpay payments.
 </p>
 
 ### 📍 5. Hyperlocal Discovery & Smart Filters
-Dynamic product feeds based on location and negotiation status.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4eecdc56-1bcd-46b2-ab4a-f6e671542626" width="100%" alt="Location Options Feed" />
 </p>
@@ -84,7 +83,6 @@ Dynamic product feeds based on location and negotiation status.
 </p>
 
 ### 👤 7. Comprehensive Customer Profile
-Centralized dashboard for orders, wishlist, and addresses.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/03d2bd19-4f51-42d5-8b6c-f87caa7606a4" width="100%" alt="Account Settings" />
 </p>
@@ -107,7 +105,6 @@ Centralized dashboard for orders, wishlist, and addresses.
 ---
 
 ## 3. Visual Walkthrough - Vendor ERP (B2B)
-A robust environment for local business owners to operate their digital branch.
 
 ### 🚀 1. Vendor Onboarding & Authentication
 <p align="center">
@@ -133,7 +130,7 @@ A robust environment for local business owners to operate their digital branch.
   <img src="https://github.com/user-attachments/assets/c3e07042-68b6-4f3d-82ba-f5b2c505e9ef" width="48%" alt="Analytics Chart 2" />
 </p>
 
-### 📦 3. Inventory, Orders & Product Management
+### 📦 3. Inventory & Product Management
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7b8fe10d-9fc7-4ef8-9346-6474c0d0e89b" width="48%" alt="Vendor Inventory" />
   <img src="https://github.com/user-attachments/assets/5c4735e5-9072-4c2b-b098-2a6e497fffb2" width="48%" alt="Vendor Orders" />
@@ -163,11 +160,30 @@ A robust environment for local business owners to operate their digital branch.
 ---
 
 ## 4. Visual Walkthrough - Admin Console
-The isolated interface for system administrators to oversee the marketplace.
+The master oversight panel for platform-wide administration.
 
+### 🛡️ 1. Authentication & System Dashboard
 <p align="center">
-  <img src="https://via.placeholder.com/800x400?text=Admin+Dashboard+Image+Pending" width="48%" alt="Admin Dashboard" />
-  <img src="https://via.placeholder.com/800x400?text=Vendor+Approvals+Image+Pending" width="48%" alt="Vendor Management" />
+  <img src="https://github.com/user-attachments/assets/c5fa78cc-e2cb-4772-a51f-031819a7f798" width="48%" alt="Main Admin Login Page" />
+  <img src="https://github.com/user-attachments/assets/a6c7a69d-e57c-4ca8-ab4c-0bfd32428945" width="48%" alt="Admin Dashboard" />
+</p>
+
+### 🏢 2. Vendor & Catalog Management
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/214569c0-e186-4a74-a528-7ec2aeddc68d" width="48%" alt="Admin Vendor Management" />
+  <img src="https://github.com/user-attachments/assets/d36e03a5-9add-4269-9453-9630d1fd97de" width="48%" alt="Vendor Management Trash" />
+</p>
+
+### 👥 3. Customer & Catalog Directory
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6f63361f-995d-4685-ab4e-bc85df0624c5" width="48%" alt="Customers Directory" />
+  <img src="https://github.com/user-attachments/assets/7743f604-5dd3-42c5-b798-dc16384df138" width="48%" alt="Global Catalog" />
+</p>
+
+### ⚙️ 4. Platform Settings & Subscription Plans
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9e4f025a-d996-4666-bceb-cc21f0472fb5" width="48%" alt="Platform Setting" />
+  <img src="https://github.com/user-attachments/assets/c98d75d0-f2d6-482e-a0ef-506a803a4134" width="48%" alt="Subscription Plans" />
 </p>
 
 ---
@@ -178,19 +194,15 @@ The isolated interface for system administrators to oversee the marketplace.
 * **Real-time State Management:** Fluid cart and bargaining data synchronization.
 
 ## 6. Tech Stack & Local Setup
-**Client-Side:** React 18, Vite, Material UI (@mui/material), Framer Motion, Lucide-React  
-**Server-Side:** Node.js, Express.js, MongoDB Atlas, JSON Web Tokens (JWT), Bcrypt
+**Client-Side:** React 18, Vite, Material UI (@mui/material)  
+**Server-Side:** Node.js, Express.js, MongoDB Atlas
 
 ```bash
 git clone [https://github.com/YOUR_GITHUB_USERNAME/bargit-nearby-bargain-marketplace.git](https://github.com/YOUR_GITHUB_USERNAME/bargit-nearby-bargain-marketplace.git)
 cd bargit-nearby-bargain-marketplace
 
 # Backend
-cd backend
-npm install
-npm start
+cd backend && npm install && npm start
 
 # Frontend
-cd ../frontend
-npm install
-npm run dev
+cd ../frontend && npm install && npm run dev
