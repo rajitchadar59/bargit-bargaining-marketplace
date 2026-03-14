@@ -110,59 +110,54 @@ Centralized dashboard for orders, wishlist, and addresses.
 A robust environment for local business owners to operate their digital branch.
 
 ### 🚀 1. Vendor Onboarding & Authentication
-The dedicated landing page ("Sell With Us") and multi-step registration.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a848791f-3cc3-43f1-80f2-fc28dff39c3d" width="100%" alt="Vendor Landing Page" />
-</p>
-<p align="center">
+  <img src="https://github.com/user-attachments/assets/a848791f-3cc3-43f1-80f2-fc28dff39c3d" width="48%" alt="Vendor Landing Page" />
   <img src="https://github.com/user-attachments/assets/f03544b3-d66b-44d2-891b-793a46e4eff2" width="48%" alt="Vendor Login" />
+</p>
+<p align="center">
   <img src="https://github.com/user-attachments/assets/7e83d62b-a036-4080-8e60-36f1ab041201" width="48%" alt="Vendor Signup Step 1" />
-</p>
-<p align="center">
   <img src="https://github.com/user-attachments/assets/67127b46-ca70-4b09-873b-ac60a52a3380" width="48%" alt="Vendor Signup Step 2" />
+</p>
+<p align="center">
   <img src="https://github.com/user-attachments/assets/c94c3936-d425-4344-87b0-84f625b9b6d2" width="48%" alt="Vendor Signup Step 3" />
+  <img src="https://github.com/user-attachments/assets/ecaec9e9-ac1e-4d1d-8bb6-ba4adb1641c7" width="48%" alt="Vendor Dashboard" />
 </p>
 
-### 📊 2. Dashboard & Advanced Analytics
-Comprehensive metrics and graphical data representation for sellers.
+### 📈 2. Deep Vendor Analytics & Earnings
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ecaec9e9-ac1e-4d1d-8bb6-ba4adb1641c7" width="100%" alt="Vendor Dashboard" />
+  <img src="https://github.com/user-attachments/assets/91ef56ec-329a-45ad-930b-f9ae018b1c35" width="48%" alt="Analytics Main Page" />
+  <img src="https://github.com/user-attachments/assets/5e561963-4fa9-4b07-bd0e-7cc279a40a4a" width="48%" alt="Vendor Earnings & Payouts" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/91ef56ec-329a-45ad-930b-f9ae018b1c35" width="32%" alt="Analytics Main Page" />
-  <img src="https://github.com/user-attachments/assets/0ad7b588-91df-4e3e-a955-76f6bb2783bb" width="32%" alt="Analytics Chart 1" />
-  <img src="https://github.com/user-attachments/assets/c3e07042-68b6-4f3d-82ba-f5b2c505e9ef" width="32%" alt="Analytics Chart 2" />
+  <img src="https://github.com/user-attachments/assets/0ad7b588-91df-4e3e-a955-76f6bb2783bb" width="48%" alt="Analytics Chart 1" />
+  <img src="https://github.com/user-attachments/assets/c3e07042-68b6-4f3d-82ba-f5b2c505e9ef" width="48%" alt="Analytics Chart 2" />
 </p>
 
-### 📦 3. Inventory & Product Management
+### 📦 3. Inventory, Orders & Product Management
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7b8fe10d-9fc7-4ef8-9346-6474c0d0e89b" width="100%" alt="Vendor Inventory" />
+  <img src="https://github.com/user-attachments/assets/7b8fe10d-9fc7-4ef8-9346-6474c0d0e89b" width="48%" alt="Vendor Inventory" />
+  <img src="https://github.com/user-attachments/assets/5c4735e5-9072-4c2b-b098-2a6e497fffb2" width="48%" alt="Vendor Orders" />
 </p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/adce4666-5bcc-4a8d-80d0-bafa12e428a5" width="48%" alt="Add New Product - Top" />
   <img src="https://github.com/user-attachments/assets/5a97c51c-8925-4b84-beee-f198a436d173" width="48%" alt="Add New Product - Bottom" />
 </p>
 
-### 💰 4. Orders & Financials
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/5c4735e5-9072-4c2b-b098-2a6e497fffb2" width="48%" alt="Vendor Orders" />
-  <img src="https://github.com/user-attachments/assets/5e561963-4fa9-4b07-bd0e-7cc279a40a4a" width="48%" alt="Vendor Earnings & Payouts" />
-</p>
-
-### ⚙️ 5. Advanced Store Settings (Profile Hub)
-Deep configuration for physical location mapping, payouts, and subscriptions.
+### ⚙️ 4. Advanced Store Settings (Profile Hub)
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fce5f00e-cf0a-4b95-9d80-5a35c39d627f" width="48%" alt="Account & Profile" />
   <img src="https://github.com/user-attachments/assets/12b07543-c56f-4060-a623-7b388998d560" width="48%" alt="Shop Details" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bf10ce95-c15a-45b7-9c23-d3ec7cafa0a3" width="32%" alt="Payout Details" />
-  <img src="https://github.com/user-attachments/assets/28482c31-3134-4a2e-9c88-3c7ddebdcfc5" width="32%" alt="Location Setup with Map" />
-  <img src="https://github.com/user-attachments/assets/c1ff16dc-d984-4c65-b992-baf61f8d2870" width="32%" alt="Advanced Actions" />
+  <img src="https://github.com/user-attachments/assets/bf10ce95-c15a-45b7-9c23-d3ec7cafa0a3" width="48%" alt="Payout Details" />
+  <img src="https://github.com/user-attachments/assets/28482c31-3134-4a2e-9c88-3c7ddebdcfc5" width="48%" alt="Location Setup with Map" />
 </p>
 <p align="center">
+  <img src="https://github.com/user-attachments/assets/c1ff16dc-d984-4c65-b992-baf61f8d2870" width="48%" alt="Advanced Actions" />
   <img src="https://github.com/user-attachments/assets/01997b73-783d-4140-a2cf-5779a0a1bbdb" width="48%" alt="Current Plan" />
-  <img src="https://github.com/user-attachments/assets/3de8359f-f388-4b7a-a6d1-31ad451b2134" width="48%" alt="Available Plans" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3de8359f-f388-4b7a-a6d1-31ad451b2134" width="100%" alt="Available Plans to Buy" />
 </p>
 
 ---
@@ -170,7 +165,6 @@ Deep configuration for physical location mapping, payouts, and subscriptions.
 ## 4. Visual Walkthrough - Admin Console
 The isolated interface for system administrators to oversee the marketplace.
 
-### 🛡️ 1. Master Dashboard & Vendor Management
 <p align="center">
   <img src="https://via.placeholder.com/800x400?text=Admin+Dashboard+Image+Pending" width="48%" alt="Admin Dashboard" />
   <img src="https://via.placeholder.com/800x400?text=Vendor+Approvals+Image+Pending" width="48%" alt="Vendor Management" />
