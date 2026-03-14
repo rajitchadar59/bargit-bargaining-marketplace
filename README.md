@@ -168,19 +168,19 @@ The master oversight panel for platform-wide administration.
   <img src="https://github.com/user-attachments/assets/a6c7a69d-e57c-4ca8-ab4c-0bfd32428945" width="48%" alt="Admin Dashboard" />
 </p>
 
-### 🏢 2. Vendor & Catalog Management
+### 🏢 2. Customer & Catalog Management
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/214569c0-e186-4a74-a528-7ec2aeddc68d" width="48%" alt="Admin Vendor Management" />
+  <img src="https://github.com/user-attachments/assets/214569c0-e186-4a74-a528-7ec2aeddc68d" width="48%" alt="Admin Vendor Management" /> 
+  <img src="https://github.com/user-attachments/assets/6f63361f-995d-4685-ab4e-bc85df0624c5" width="48%" alt="Customers Directory" />
+</p>
+
+### 👥 3. Platform Settings & Subscription Plans
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7743f604-5dd3-42c5-b798-dc16384df138" width="48%" alt="Global Catalog" />
   <img src="https://github.com/user-attachments/assets/d36e03a5-9add-4269-9453-9630d1fd97de" width="48%" alt="Vendor Management Trash" />
 </p>
 
-### 👥 3. Customer & Catalog Directory
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/6f63361f-995d-4685-ab4e-bc85df0624c5" width="48%" alt="Customers Directory" />
-  <img src="https://github.com/user-attachments/assets/7743f604-5dd3-42c5-b798-dc16384df138" width="48%" alt="Global Catalog" />
-</p>
-
-### ⚙️ 4. Platform Settings & Subscription Plans
+### ⚙️ 4. Vendor Management
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9e4f025a-d996-4666-bceb-cc21f0472fb5" width="48%" alt="Platform Setting" />
   <img src="https://github.com/user-attachments/assets/c98d75d0-f2d6-482e-a0ef-506a803a4134" width="48%" alt="Subscription Plans" />
