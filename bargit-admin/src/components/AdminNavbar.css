@@ -1,0 +1,116 @@
+/* Main Navbar */
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 55px; /* ⬇️ Height ekdum choti aur sleek kar di */
+    background-color: #0f172a;
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Left: Brand Logo */
+.admin-brand {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.admin-brand h2 {
+    margin: 0;
+    color: white;
+    font-size: 20px; /* Logo thoda adjust kiya balance ke liye */
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.admin-brand span {
+    color: #FF2E63;
+}
+
+/* Center: Navigation Links (Wide & Minimal) */
+.admin-nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* ⬆️ Links ke beech gap badha diya */
+    flex: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #94a3b8;
+    font-size: 13.5px; /* ⬇️ Font size choti kar di */
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+    color: white;
+}
+
+.nav-item.active {
+    color: #FF2E63;
+}
+
+/* Right: Profile & Actions */
+.admin-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Simple Admin Profile */
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-name {
+    color: white;
+    font-size: 13.5px; /* Profile font bhi match kar diya */
+    font-weight: 600;
+}
+
+.admin-badge {
+    background-color: transparent;
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+}
+
+.divider {
+    width: 1px;
+    height: 18px; /* Divider height adjust ki */
+    background-color: #334155;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: transparent;
+    border: none;
+    color: #f87171;
+    font-size: 13.5px; /* Font match kar diya */
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    padding: 0;
+}
+
+.logout-btn:hover {
+    color: #ef4444;
+}

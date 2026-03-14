@@ -1,0 +1,562 @@
+
+.booking-page {
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.booking-main-layout {
+  padding: 8px 20px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ve-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.ve-title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin: 0;
+}
+
+.ve-subtitle {
+  color: #64748b;
+  margin: 2px 0 0 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.ve-download-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  /* Smaller font */
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.ve-download-btn:hover {
+  border-color: #FF2E63;
+  color: #FF2E63;
+}
+
+/* --- COMPACT DESKTOP TIMELINE --- */
+.desktop-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  /* Reduced margin */
+  position: relative;
+}
+
+.t-line {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #e2e8f0;
+  z-index: 1;
+}
+
+.t-dot {
+  position: relative;
+  z-index: 2;
+  background: #f8fafc;
+  padding: 0 8px;
+  text-align: center;
+}
+
+.t-dot span {
+  width: 28px;
+  /* Smaller dots */
+  height: 28px;
+  background: white;
+  border: 2px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 0.8rem;
+  /* Smaller number */
+  margin: 0 auto 6px;
+  transition: 0.3s;
+}
+
+.t-dot p {
+  font-size: 0.75rem;
+  /* Smaller label */
+  font-weight: 700;
+  color: #64748b;
+  margin: 0;
+}
+
+.t-dot.active span {
+  border-color: #FF2E63;
+  background: #FF2E63;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 46, 99, 0.2);
+}
+
+/* --- GRID SYSTEM --- */
+.booking-grid-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+/* Reduced gap */
+
+.sections-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* Tighter layout */
+  width: 100%;
+}
+
+.mobile-vertical-line {
+  display: none;
+}
+
+/* --- CARDS STYLING (Compact) --- */
+.booking-section-card {
+ 
+  border-radius: 12px;
+  /* Less rounded for pro look */
+  padding: 20px;
+  /* Reduced padding */
+  border: 1px solid #edf2f7;
+
+}
+
+.booking-section-card.highlight {
+  border: 2px solid #FF2E63;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  /* Reduced margin */
+}
+
+.step-count {
+  background: #fff1f2;
+  color: #FF2E63;
+  font-size: 0.7rem;
+  font-weight: 900;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.card-top h4 {
+  font-size: 1rem;
+  /* Smaller title */
+  color: #1e293b;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* --- NEW SLEEK OVERVIEW WIDGET --- */
+.ve-compact-balance {
+
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ve-compact-label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ve-compact-amount {
+  font-size: 1.5rem;
+  /* Smaller than previous huge text */
+  font-weight: 900;
+  color: #0f172a;
+  margin: 4px 0;
+  letter-spacing: -0.5px;
+}
+
+.ve-compact-help {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin: 0;
+  font-weight: 600;
+}
+
+.ve-compact-secondary {
+  display: flex;
+  gap: 15px;
+  padding-top: 12px;
+  margin-top: 12rem;
+}
+
+.ve-sec-stat {
+  flex: 1;
+}
+
+.ve-sec-stat p {
+  font-size: 0.7rem;
+  color: #64748b;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ve-sec-stat h4 {
+  font-size: 1rem;
+  color: #0f172a;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* --- WITHDRAWAL FORM (Compact) --- */
+.ve-withdraw-form {
+  margin-bottom: 15px;
+}
+
+.ve-input-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #1e293b;
+  text-transform: uppercase;
+}
+
+.ve-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 12px;
+  transition: 0.2s;
+}
+
+.ve-input-wrapper:focus-within {
+  border-color: #FF2E63;
+  background: white;
+}
+
+.ve-currency-symbol {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #64748b;
+}
+
+.ve-amount-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 1.3rem;
+  /* Scaled down */
+  font-weight: 900;
+  color: #0f172a;
+  padding: 10px 8px;
+  outline: none;
+  font-family: inherit;
+}
+
+.ve-amount-input::-webkit-outer-spin-button,
+.ve-amount-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Reused Base utilities (Compacted) */
+.address-display {
+  background: #fcfcfd;
+  padding: 12px 15px;
+  /* Tighter padding */
+  border-radius: 8px;
+  border: 1px solid #f1f5f9;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  align-items: center;
+}
+
+.tag-home {
+  font-size: 0.6rem;
+  font-weight: 800;
+  background: #334155;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.user-info h5 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #1e293b;
+}
+
+.address-text {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  color: #FF2E63;
+  font-weight: 700;
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.edit-btn:hover {
+  text-decoration: underline;
+}
+
+.ve-text-link {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #FF2E63;
+  cursor: pointer;
+}
+
+.ve-text-link:hover {
+  text-decoration: underline;
+}
+
+.payment-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.pay-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.pay-title {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0 0 2px 0;
+}
+
+.pay-subtitle {
+  font-size: 0.7rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.btn-main {
+  background: #FF2E63;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.finalize-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px !important;
+  font-size: 0.9rem;
+}
+
+/* Compact button */
+
+.ve-ghost-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  color: #475569;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ve-ghost-btn:hover {
+  border-color: #0f172a;
+  color: #0f172a;
+}
+
+.text-green {
+  color: #10b981 !important;
+}
+
+.text-dark {
+  color: #0f172a !important;
+}
+
+.text-pink {
+  color: #FF2E63 !important;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .desktop-timeline {
+    display: none;
+  }
+
+  .ve-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .mobile-vertical-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30px;
+    position: relative;
+    padding-top: 20px;
+  }
+
+  .mobile-vertical-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e2e8f0;
+    z-index: 1;
+  }
+
+  .v-dot {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 50%;
+    margin-bottom: 300px;
+    z-index: 2;
+    position: relative;
+  }
+
+  .v-dot.active {
+    background: #FF2E63;
+    border-color: #FF2E63;
+  }
+
+  .sections-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================
+   🌟 NAYA: Bank Details Warning Box 
+   ========================================= */
+
+.ve-warning-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    padding: 25px 20px; 
+    background-color: #fff1f2; 
+    border: 1px dashed #fecdd3; 
+    border-radius: 12px; 
+    margin-top: 15px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.warning-icon {
+    margin-bottom: 12px;
+    background: #ffe4e6;
+    padding: 8px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.ve-warning-box h4 { 
+    color: #e11d48; 
+    margin: 0 0 6px 0; 
+    font-size: 1.15rem; 
+    font-weight: 800; 
+}
+
+.ve-warning-box p { 
+    font-size: 0.85rem; 
+    color: #4c1d95; 
+    margin: 0 0 20px 0; 
+    line-height: 1.5; 
+    font-weight: 600;
+}
+
+.warning-btn {
+    background-color: #0f172a; 
+    padding: 12px 24px; 
+    font-size: 0.9rem; 
+    width: auto;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.warning-btn:hover {
+    background-color: #1e293b;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}

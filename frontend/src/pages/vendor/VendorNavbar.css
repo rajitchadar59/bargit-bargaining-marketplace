@@ -1,0 +1,70 @@
+.v-nav {
+    height: 70px;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.v-nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.v-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.v-logo-section .logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: var(--deep-navy);
+}
+
+.v-logo-section .logo span {
+    color: var(--accent-pink);
+}
+
+.v-logo-badge {
+    background: #fff1f2;
+    color: var(--accent-pink);
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 4px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Actions Styling */
+.v-help-link {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-slate);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.v-help-link:hover {
+    color: var(--accent-pink);
+}
+
+@media (max-width: 600px) {
+    .v-logo-badge {
+        display: none; /* Mobile par clean rakhne ke liye badge hata diya */
+    }
+}

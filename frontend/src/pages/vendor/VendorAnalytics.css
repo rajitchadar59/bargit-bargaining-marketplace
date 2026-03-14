@@ -1,0 +1,236 @@
+/* --- PREMIUM VENDOR ANALYTICS STYLING --- */
+
+.vo-layout {
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.va-full-width-container {
+    padding: 40px 4%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header */
+.va-header {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.va-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 5px 0;
+    letter-spacing: -0.5px;
+}
+
+.ve-subtitle {
+    margin: 0;
+    color: #64748b;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* 🌟 NAYA: SEAMLESS NAKED STATS CONTAINER 🌟 */
+.va-naked-stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 40px;
+    margin-bottom: 10px;
+}
+
+.va-n-stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.va-n-label {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.va-n-value {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.va-n-divider {
+    width: 1px;
+    height: 45px;
+}
+
+
+/* CARDS COMMON FOR CHARTS */
+.va-chart-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.mb-30 { margin-bottom: 30px; }
+
+.va-chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.va-chart-header h4 {
+    margin: 0 0 4px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.va-chart-header p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* FILTER DROPDOWN STYLING */
+.va-chart-filter-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 0 10px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.va-chart-filter-box:hover {
+    border-color: #0f172a;
+}
+
+.va-chart-filter-box select {
+    appearance: none;
+    background: transparent;
+    border: none;
+    padding: 8px 24px 8px 5px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0f172a;
+    cursor: pointer;
+    outline: none;
+}
+
+.va-chart-filter-box .filter-arrow {
+    position: absolute;
+    right: 8px;
+    color: #64748b;
+    pointer-events: none;
+}
+
+/* Chart Layouts */
+.va-chart-large {
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+
+.va-chart-medium {
+    position: relative;
+    height: 240px;
+    width: 100%;
+}
+
+.va-bottom-3-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Doughnut Details */
+.va-doughnut-wrapper {
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.va-doughnut-center-text {
+    position: absolute;
+    text-align: center;
+    pointer-events: none;
+}
+
+.va-doughnut-center-text h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1;
+}
+
+.va-doughnut-center-text p {
+    margin: 4px 0 0 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.va-custom-legend {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.va-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+.va-legend-item .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Helpers */
+.text-pink { color: #FF2E63 !important; }
+.text-green { color: #10b981 !important; }
+.text-red { color: #ef4444 !important; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .va-bottom-3-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .va-full-width-container { padding: 30px 20px; }
+    
+    /* Stats row goes vertical on mobile */
+    .va-naked-stats-container { 
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px;
+    }
+    .va-n-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .va-bottom-3-grid { grid-template-columns: 1fr; }
+    .va-chart-large { height: 280px; }
+}

@@ -1,0 +1,9 @@
+.orders-wrapper { padding: 40px 20px; }
+.order-card { display: flex; align-items: center; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #f1f5f9; gap: 20px; }
+.order-card img { width: 60px; height: 60px; border-radius: 10px; object-fit: cover; }
+.order-info { flex: 1; }
+.order-id { font-size: 0.75rem; color: #94a3b8; font-weight: 700; }
+.status-tag { display: flex; align-items: center; gap: 5px; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 100px; width: fit-content; margin-top: 5px; }
+.status-tag.delivered { background: #dcfce7; color: #16a34a; }
+.status-tag.processing { background: #fef9c3; color: #a16207; }
+.track-btn { border: 1.5px solid #e2e8f0; background: white; padding: 8px 15px; border-radius: 8px; font-weight: 700; cursor: pointer; }

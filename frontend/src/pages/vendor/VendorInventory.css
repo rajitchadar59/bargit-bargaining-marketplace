@@ -1,0 +1,319 @@
+/* --- VendorInventory.css --- */
+
+.va-full-width-container {
+    padding: 30px 40px 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.va-title { font-size: 1.8rem; font-weight: 900; color: #0f172a; margin: 0; }
+.ve-subtitle { color: #64748b; margin: 4px 0 0 0; font-weight: 600; font-size: 0.85rem; }
+.pink-text { color: #FF2E63 !important; }
+
+/* --- HEADER & NEW PREMIUM ADD BUTTON --- */
+.vi-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center aligned */
+    margin-bottom: 25px;
+}
+
+.vi-premium-add-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #0f172a; /* Dark sleek navy */
+    color: white;
+    padding: 10px 20px; /* Compact padding */
+    border-radius: 100px; /* Pill shape for modern look */
+    font-weight: 700;
+    font-size: 0.85rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vi-premium-add-btn:hover {
+    background: #FF2E63; 
+  
+}
+
+/* --- MINIMAL NAKED STATS ROW --- */
+.vi-naked-stats-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+    padding: 0 5px; /* Thodi si breathing room */
+    
+    /* Mobile me ek row me rakhne ka jadoo */
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox ke liye scrollbar hide */
+}
+
+/* Chrome/Safari ke liye scrollbar hide karna taaki clean lage */
+.vi-naked-stats-row::-webkit-scrollbar {
+    display: none;
+}
+
+.vi-n-stat {
+    display: flex;
+    align-items: baseline; /* Number aur text ko base se align karne ke liye */
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #64748b; /* Muted gray text */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vi-n-stat strong {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 1; /* Number ko align karne ke liye */
+}
+
+.vi-n-divider {
+    width: 1px;
+    height: 16px;
+   
+}
+
+
+.vi-table-wrapper {
+    padding: 0 !important; 
+    overflow: hidden;
+}
+
+.vi-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #edf2f7;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.vi-search-box {
+    position: relative;
+    width: 350px;
+}
+
+.vi-search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+
+.vi-search-input {
+    width: 100%;
+    padding: 10px 12px 10px 36px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0f172a;
+    transition: 0.2s;
+}
+
+.vi-search-input:focus {
+    outline: none;
+    border-color: #FF2E63;
+}
+
+/* --- ACTUAL FUNCTIONAL FILTERS --- */
+.vi-filters-group {
+    display: flex;
+    gap: 12px;
+}
+
+.vi-custom-filter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 0;
+    transition: 0.2s;
+}
+
+.vi-custom-filter:hover { border-color: #0f172a; }
+
+.vi-filter-icon {
+    position: absolute;
+    left: 10px;
+    color: #64748b;
+    pointer-events: none;
+}
+
+.vi-filter-arrow {
+    position: absolute;
+    right: 10px;
+    color: #64748b;
+    pointer-events: none;
+}
+
+.vi-filter-select {
+    appearance: none;
+    background: transparent;
+    border: none;
+    padding: 10px 32px 10px 30px; /* Space for icons */
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #475569;
+    cursor: pointer;
+    outline: none;
+}
+
+/* --- THE COMPACT TABLE --- */
+.vi-table-responsive { width: 100%; overflow-x: auto; }
+
+.vi-table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+.vi-table th {
+    text-align: left;
+    padding: 14px 20px; /* Reduced padding */
+    font-size: 0.7rem; /* Smaller font */
+    font-weight: 800;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+ 
+    border-bottom: 2px solid #edf2f7;
+}
+
+.vi-table td {
+    padding: 16px 20px; /* Tighter rows */
+    vertical-align: middle;
+    border-bottom: 1px solid #edf2f7;
+    transition: background 0.2s;
+}
+
+.vi-table tbody tr:last-child td { border-bottom: none; }
+
+/* Table Cells Content */
+.vi-product-col { display: flex; align-items: center; gap: 12px; }
+
+.vi-prod-img {
+    width: 40px; /* Smaller images */
+    height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid #edf2f7;
+}
+
+.vi-prod-name {
+    margin: 0 0 2px 0;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #1e293b;
+}
+
+.vi-prod-id { font-size: 0.7rem; color: #64748b; font-weight: 600; }
+
+.vi-category-tag {
+   
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.vi-status-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.vi-price-mrp { font-size: 0.9rem; color: #0f172a; }
+
+/* Special Bargain Box (Compact) */
+.vi-bargain-box {
+   
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    border: 1px dashed #FF2E63;
+}
+
+/* --- FIXED PRICE TAG STYLING --- */
+.vi-fixed-price-tag {
+  
+    color: #475569;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid #e2e8f0;
+}
+
+.vi-action-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.vi-icon-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.vi-icon-btn:hover { color: #0f172a; }
+
+/* Helper Colors */
+.text-blue { color: #3b82f6; }
+.text-orange { color: #f97316 !important; }
+.text-pink { color: #FF2E63; }
+.text-dark { color: #0f172a !important; }
+.text-red { color: #ef4444 !important; }
+.bg-green { background: #10b981; }
+.bg-orange { background: #f97316; }
+.bg-red { background: #ef4444; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .vi-toolbar { flex-direction: column; gap: 15px; align-items: flex-start; }
+    .vi-search-box { width: 100%; }
+    .vi-filters-group { width: 100%; flex-wrap: wrap; }
+}
+
+@media (max-width: 768px) {
+    .va-full-width-container { padding: 30px 20px; }
+    .vi-header-row { flex-direction: column; align-items: flex-start; gap: 15px; }
+    .vi-premium-add-btn { width: 100%; justify-content: center; }
+    
+    .vi-naked-stats-row {
+        gap: 15px; /* Mobile pe gap thoda kam kiya */
+    }
+    
+    .vi-n-stat {
+        font-size: 0.75rem; /* Text thoda aur chota kiya taaki fit ho */
+    }
+    
+    .vi-n-stat strong {
+        font-size: 1.2rem;
+    }
+}

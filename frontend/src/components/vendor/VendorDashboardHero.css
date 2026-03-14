@@ -1,0 +1,152 @@
+/* --- HERO SECTION BASE --- */
+.v-hero-full-width {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #0A0E17;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.v-hero-slider-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.v-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 14, 23, 0.95) 20%, rgba(10, 14, 23, 0.6) 60%, transparent 100%);
+  z-index: 1;
+}
+
+.v-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* --- TYPOGRAPHY --- */
+.v-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0 0 15px 0;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.v-gradient-text {
+  background: linear-gradient(to right, #FF2E63, #ff6b95);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.v-hero-subtext {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+.v-pink-highlight { 
+  color: #FF2E63; 
+  font-weight: 700; 
+}
+
+/* --- GLASS ACTION BOX (Replaced Search) --- */
+.v-hero-glass-action-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 100px;
+  max-width: 580px;
+  width: 100%;
+  margin-bottom: 1rem;
+
+}
+
+.v-glass-info-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.v-glass-info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.v-glass-info-item span {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.v-glass-info-item strong {
+  font-size: 1.15rem;
+  color: white;
+  font-weight: 800;
+}
+
+.v-glass-divider {
+  width: 1px;
+  height: 30px;
+  background: rgba(255,255,255,0.2);
+}
+
+
+
+/* --- STATS ROW --- */
+.v-hero-stats { 
+  display: flex; 
+  gap: 50px; 
+}
+
+.v-h-stat { 
+  font-size: 0.8rem; 
+  color: rgba(255, 255, 255, 0.5); 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+
+.v-h-stat b { 
+  font-size: 1.4rem; 
+  color: #fff; 
+  display: block; 
+  margin-bottom: 4px; 
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .v-hero-content h1 { font-size: 2.5rem; }
+  .v-hero-glass-action-box {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    align-items: stretch;
+  }
+  .v-glass-info-group { justify-content: space-between; }
+  .v-hero-action-btn { justify-content: center; }
+  .v-hero-stats { gap: 20px; flex-wrap: wrap; }
+}
+
+
+
+
+
+

@@ -1,0 +1,165 @@
+.v-dash-navbar {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.v-nav-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.v-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.v-logo-section .logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: var(--deep-navy);
+}
+
+.v-logo-section .logo span {
+    color: var(--accent-pink);
+}
+
+.v-logo-badge {
+    background: #fff1f2;
+    color: var(--accent-pink);
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 4px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.v-panel-tag {
+  background: #0A0E17;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+.v-right-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.v-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.v-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #64748b;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 10px 16px;
+  border-radius: 12px;
+}
+
+.v-nav-link:hover {  
+  color: #FF2E63;
+}
+
+.v-nav-link.active {
+ 
+  color: #FF2E63;
+}
+
+.v-nav-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.v-user-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.v-account-trigger {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.v-text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.v-welcome {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.v-name {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #0A0E17;
+}
+
+.v-menu-item {
+  font-weight: 600 !important;
+  font-size: 0.88rem !important;
+  border-radius: 8px !important;
+  margin: 2px 0 !important;
+  color: #334155 !important;
+}
+
+.v-menu-divider {
+  height: 1px;
+  background: #f1f5f9;
+  margin: 6px 0;
+}
+
+.v-logout-item {
+  font-weight: 700 !important;
+  color: #e11d48 !important;
+  border-radius: 8px !important;
+}
+
+.v-menu-item:hover {
+  background-color: #f8fafc !important;
+}
+
+@media (max-width: 1024px) {
+  .v-nav-link span { display: none; }
+  .v-nav-link { padding: 12px; }
+  .v-text-info { display: none; }
+}

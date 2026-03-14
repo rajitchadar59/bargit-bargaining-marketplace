@@ -1,0 +1,533 @@
+
+.va-full-width-container {
+  padding: 30px 40px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.va-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.ve-subtitle {
+  color: #64748b;
+  margin: 4px 0 0 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.pink-text {
+  color: #FF2E63 !important;
+}
+
+/* --- HEADER ACTIONS --- */
+.vap-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.vap-header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.vap-btn-ghost {
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.vap-btn-ghost:hover {
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+
+.vap-btn-primary {
+  background: #FF2E63;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(255, 46, 99, 0.2);
+}
+
+.vap-btn-primary:hover {
+  background: #e01b4c;
+  transform: translateY(-1px);
+}
+
+/* --- GRID LAYOUT --- */
+.vap-grid-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* Left col wider than right col */
+  gap: 24px;
+  align-items: start;
+}
+
+.vap-card {
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.01);
+}
+
+.vap-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 20px 0;
+}
+
+/* --- FORM INPUTS --- */
+.vap-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.vap-input-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.vap-input-group input[type="text"],
+.vap-input-group input[type="number"],
+.vap-input-group textarea,
+.vap-input-group select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #0f172a;
+  transition: 0.2s;
+}
+
+.vap-input-group input:focus,
+.vap-input-group textarea:focus,
+.vap-input-group select:focus {
+  outline: none;
+  border-color: #FF2E63;
+  box-shadow: 0 0 0 3px rgba(255, 46, 99, 0.1);
+}
+
+.vap-row-inputs {
+  display: flex;
+  gap: 16px;
+}
+
+/* --- TAGS SYSTEM --- */
+.vap-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fcfcfd;
+  min-height: 48px;
+  align-items: center;
+}
+
+.vap-tags-container:focus-within {
+  border-color: #FF2E63;
+  background: white;
+}
+
+.vap-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #334155;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.vap-tag svg {
+  cursor: pointer;
+  color: #94a3b8;
+}
+
+.vap-tag svg:hover {
+  color: #ef4444;
+}
+
+.vap-tag-input {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  flex: 1;
+  min-width: 120px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* --- MEDIA UPLOAD --- */
+.vap-media-upload-box {
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.vap-media-upload-box:hover {
+  border-color: #94a3b8;
+}
+
+.vap-upload-text {
+  font-size: 0.9rem;
+  color: #475569;
+  margin: 0 0 4px 0;
+}
+
+.vap-upload-sub {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+/* --- CUSTOM SPECIFICATIONS --- */
+.vap-specs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.vap-spec-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+.vap-spec-row input {
+  flex: 1;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 0.8rem;
+  
+}
+
+.vap-remove-btn {
+  background: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.vap-remove-btn:hover {
+  color: red;
+}
+
+.vap-add-spec-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px dashed #cbd5e1;
+  color: #0f172a;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.vap-add-spec-btn:hover {
+  border-color: #0f172a;
+  background: #f8fafc;
+}
+
+
+
+.vap-price-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.vap-price-input span {
+  position: absolute;
+  left: 16px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.vap-price-input input {
+  padding-left: 32px !important;
+  font-weight: 700;
+  font-size: 1rem !important;
+}
+
+/* Toggle Switch */
+.vap-toggle-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.vap-toggle-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.vap-toggle-sub {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 2px 0 0 0;
+}
+
+.vap-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.vap-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.vap-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .3s;
+  border-radius: 34px;
+}
+
+.vap-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+input:checked+.vap-slider {
+  background-color: #FF2E63;
+}
+
+input:checked+.vap-slider:before {
+  transform: translateX(20px);
+}
+
+/* Min Bargain Price highlight */
+.vap-min-price-box {
+  animation: fadeIn 0.3s ease;
+}
+
+.pink-focus input:focus {
+  border-color: #FF2E63 !important;
+  box-shadow: 0 0 0 3px rgba(255, 46, 99, 0.1) !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vap-divider {
+  height: 1px;
+  margin: 20px 0;
+}
+
+/* Helper classes */
+.flex-align {
+  display: flex;
+  align-items: center;
+}
+
+.text-gray {
+  color: #64748b;
+}
+
+.text-pink {
+  color: #FF2E63;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .vap-grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stack columns on smaller screens */
+  .vap-right-col {
+    order: -1;
+  }
+
+  /* Bring settings to top on mobile optionally, or leave as is */
+}
+
+@media (max-width: 768px) {
+  .va-full-width-container {
+    padding: 30px 20px;
+  }
+
+  .vap-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .vap-header-actions {
+    width: 100%;
+  }
+
+  .vap-header-actions button {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .vap-row-inputs {
+    flex-direction: column;
+  }
+}
+
+
+
+/* --- ACTUAL MEDIA UPLOAD STYLES --- */
+.vap-media-upload-box {
+    display: block;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.vap-media-upload-box:hover { border-color: #FF2E63; background: #fff1f2; color: #FF2E63; }
+.vap-media-upload-box:hover .text-gray { color: #FF2E63; }
+
+.vap-upload-text { font-size: 0.9rem; color: #475569; margin: 0 0 4px 0; }
+.vap-upload-sub { font-size: 0.75rem; color: #94a3b8; margin: 0; }
+.mt-15 { margin-top: 15px; }
+.mb-0 { margin-bottom: 0 !important; }
+
+/* Image Previews Grid */
+.vap-image-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 12px;
+}
+
+.vap-preview-item {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1; /* Makes it a perfect square */
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.vap-preview-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vap-remove-media-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.vap-remove-media-btn:hover { background: #ef4444; transform: scale(1.1); }
+
+/* Video Upload Styles */
+.vap-video-upload-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px dashed #cbd5e1;
+    color: #0f172a;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: 0.2s;
+    width: fit-content;
+}
+.vap-video-upload-btn:hover { background: #f8fafc; border-color: #0f172a; }
+
+.vap-video-preview-box {
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.vap-video-player {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    background: black;
+}

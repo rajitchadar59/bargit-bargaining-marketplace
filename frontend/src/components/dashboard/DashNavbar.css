@@ -1,0 +1,198 @@
+.dash-navbar {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+ 
+}
+
+.dash-nav-container {
+  max-width: 1485px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dash-logo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  cursor: pointer;
+  color: #0A0E17;
+  letter-spacing: -1px;
+}
+
+.dash-logo .dot {
+  color: #FF2E63;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.dash-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  color: #64748b;
+  transition: 0.2s ease;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+ 
+  color: #0A0E17;
+}
+
+.nav-link.active {
+  color: #FF2E63;
+  
+}
+
+.nav-divider {
+  width: 1px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.user-account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.welcome-text {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.welcome-text strong {
+  color: #0A0E17;
+}
+
+/* MUI Menu overrides for hover */
+.MuiMenuItem-root:hover {
+  background-color: #f1f5f9 !important;
+}
+
+@media (max-width: 768px) {
+  .welcome-text { display: none; }
+  .dash-links span { font-size: 0; gap: 0; } /* Only icons on mobile */
+  .nav-link { padding: 8px; }
+}
+
+
+
+
+
+/* search */
+
+
+/* Option 1: Modern Pill */
+.nav-search-container {
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid transparent;
+  border-radius: 50px; /* Poora gol (Pill shape) */
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-search-container:focus-within {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.nav-search-icon {
+  color: #94a3b8;
+  margin-right: 12px;
+}
+
+.nav-search-container:focus-within .nav-search-icon {
+  color: #FF2E63; /* Focus par pink ho jayega */
+}
+
+.nav-search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+
+
+
+
+/* =========================================
+   🌟 AUTH BUTTONS (LOG IN / SIGN UP) 🌟
+========================================= */
+.auth-buttons-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Log In Button - Minimalist */
+.nav-btn-outline {
+    background: transparent;
+    color: #0A0E17;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.88rem; /* Font size baaki links ke barabar */
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.nav-btn-outline:hover {
+    color: #FF2E63; /* Hover par text pink hoga */
+}
+
+/* Sign Up Button - Solid Color */
+.nav-btn-solid {
+    background: #FF2E63;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 46, 99, 0.2);
+   
+}
+
+.nav-btn-solid:hover {
+    background: #d41b4a;
+    
+}
+
+/* Responsive (Mobile me thoda chota) */
+@media (max-width: 768px) {
+  .auth-buttons-group { gap: 5px; }
+  .nav-btn-outline, .nav-btn-solid { padding: 6px 12px; font-size: 0.8rem; }
+}

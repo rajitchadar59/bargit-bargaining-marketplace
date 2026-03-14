@@ -1,0 +1,147 @@
+.vendor-auth-page {
+  min-height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.vendor-auth-card {
+  padding: 40px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  margin: auto;
+}
+
+.vendor-auth-card h2 {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.vendor-auth-card p {
+  color: var(--text-slate);
+  margin-bottom: 20px;
+}
+
+.vendor-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.vendor-progress-fill {
+  height: 100%;
+  background: var(--accent-pink);
+  transition: width 0.4s ease-in-out;
+}
+
+.vendor-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  /* Labels ke liye left align */
+}
+
+.vendor-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vendor-input-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--deep-navy);
+  margin-left: 5px;
+}
+
+.vendor-form-step {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: vendorFadeIn 0.4s ease-in-out;
+}
+
+.vendor-auth-form input,
+.vendor-auth-form select {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  font-family: var(--font-body);
+  outline: none;
+  transition: 0.3s;
+}
+
+.vendor-auth-form input:focus,
+.vendor-auth-form select:focus {
+  border-color: var(--accent-pink);
+  background: white;
+}
+
+.vendor-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.vendor-auth-btn {
+  background: var(--accent-pink);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.vendor-back-btn {
+  background: #64748b;
+}
+
+.vendor-auth-btn:hover {
+  filter: brightness(0.9);
+  transform: translateY(-2px);
+}
+
+.vendor-error-alert {
+  color: #e11d48;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.vendor-toggle-text {
+  margin-top: 20px;
+}
+
+.vendor-toggle-text span {
+  color: var(--accent-pink);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@keyframes vendorFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

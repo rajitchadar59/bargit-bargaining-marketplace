@@ -1,0 +1,162 @@
+
+/* Layout Basics */
+.vo-layout {
+ 
+  min-height: 100vh;
+  padding-bottom: 60px;
+  font-family: var(--font-body);
+}
+
+.pink-text { 
+  color: var(--accent-pink); 
+}
+
+/* --- Info Section Layout (From your Home.css) --- */
+.info-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 500px)); 
+  gap: 20rem; 
+  width: 100%;
+  justify-content: center; 
+  align-items: flex-start;  
+  padding: 80px 24px; 
+}
+
+/* Ensure info-content boxes top se start ho */
+.info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Tag */
+.section-tag {
+  color: var(--accent-pink);
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+  line-height: 1;
+}
+
+/* Typography */
+.info-content h2 {
+  font-size: 2.5rem;
+  font-family: var(--font-head);
+  font-weight: 900;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  color: var(--deep-navy);
+}
+
+.info-content p {
+  font-size: 1rem;
+  color: var(--text-slate);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* --- LEFT SIDE: STATS BOX (mini-feature) --- */
+.mini-feature {
+  padding: 30px;
+ 
+  border-radius: 20px;
+  border-left: 5px solid var(--accent-pink);
+
+  transition: transform 0.3s ease;
+}
+
+
+
+.mini-feature h4 { 
+  margin-bottom: 8px; 
+  font-size: 1.3rem; 
+  font-weight: 800;
+  color: var(--deep-navy);
+}
+
+.mini-feature p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* --- RIGHT SIDE: TO-DO TIMELINE (benefits-container) --- */
+.benefits-container {
+  position: relative;
+  padding-left: 20px; 
+  margin-top: 10px;
+}
+
+/* Vertical Line */
+.benefit-line {
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  bottom: 40px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent-pink), transparent);
+  opacity: 0.3;
+}
+
+/* Individual Timeline Items */
+.benefit-item {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 45px; 
+  align-items: flex-start;
+  transition: opacity 0.3s ease;
+}
+
+.benefit-item:hover {
+  opacity: 0.8;
+}
+
+/* Pink Dots on the line */
+.benefit-dot {
+  position: absolute;
+  left: -20px; 
+  top: 4px; /* Align with the title */
+  width: 12px;
+  height: 12px;
+  background: var(--accent-pink);
+  border-radius: 50%;
+  border: 3px solid #f8fafc; /* Match page background */
+  box-shadow: 0 0 10px rgba(255, 46, 99, 0.4);
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover .benefit-dot {
+  transform: scale(1.3);
+  box-shadow: 0 0 15px rgba(255, 46, 99, 0.8);
+}
+
+/* Content inside Timeline */
+.benefit-item h4 { 
+  font-size: 1.15rem; 
+  margin-bottom: 6px; 
+  font-weight: 800;
+  color: var(--deep-navy);
+}
+
+.benefit-item p { 
+  font-size: 0.95rem; 
+  line-height: 1.5; 
+  margin: 0; 
+  color: var(--text-slate);
+}
+
+@media (max-width: 1024px) {
+  .info-section {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    gap: 4rem;
+    padding: 60px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-content h2 { font-size: 2rem; }
+}
