@@ -41,7 +41,7 @@ The buyer-facing application focuses on product discovery, location awareness, a
 **1. Main Landing & Search (Home Page)**
 > The entry point featuring global search, dynamic categories, and promotional banners.
 > 
-> ![Customer Home Page](yahan-apni-image-ka-link-daalo.png)
+> ![Customer Home Page]
 > *📌 Note: Capture the top navbar, search bar, and the main hero section.*
 
 **2. Hyperlocal Product Feed**
