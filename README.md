@@ -139,8 +139,8 @@ A robust environment for local business owners to operate their digital branch.
   <img src="https://github.com/user-attachments/assets/5c4735e5-9072-4c2b-b098-2a6e497fffb2" width="48%" alt="Vendor Orders" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/adce4666-5bcc-4a8d-80d0-bafa12e428a5" width="48%" alt="Add New Product - Top" />
   <img src="https://github.com/user-attachments/assets/5a97c51c-8925-4b84-beee-f198a436d173" width="48%" alt="Add New Product - Bottom" />
+  <img src="https://github.com/user-attachments/assets/adce4666-5bcc-4a8d-80d0-bafa12e428a5" width="48%" alt="Add New Product - Top" />
 </p>
 
 ### ⚙️ 4. Advanced Store Settings (Profile Hub)
