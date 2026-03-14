@@ -176,15 +176,14 @@ The master oversight panel for platform-wide administration.
 
 ### 👥 3. Platform Settings & Subscription Plans
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/9e4f025a-d996-4666-bceb-cc21f0472fb5" width="48%" alt="Platform Setting" />
     <img src="https://github.com/user-attachments/assets/6f63361f-995d-4685-ab4e-bc85df0624c5" width="48%" alt="Customers Directory" />
-  
+    <img src="https://github.com/user-attachments/assets/9e4f025a-d996-4666-bceb-cc21f0472fb5" width="48%" alt="Platform Setting" />  
 </p>
 
 ### ⚙️ 4. Vendor Management
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7743f604-5dd3-42c5-b798-dc16384df138" width="48%" alt="Global Catalog" />
   <img src="https://github.com/user-attachments/assets/c98d75d0-f2d6-482e-a0ef-506a803a4134" width="48%" alt="Subscription Plans" />
+  <img src="https://github.com/user-attachments/assets/7743f604-5dd3-42c5-b798-dc16384df138" width="48%" alt="Global Catalog" />
 </p>
 
 ---
