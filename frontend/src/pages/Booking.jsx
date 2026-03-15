@@ -178,7 +178,7 @@ const Booking = () => {
                 rzp.open();
             }
         } catch (error) {
-            alcustomAlertert(error.response?.data?.message || "Failed to process order");
+            customAlert(error.response?.data?.message || "Failed to process order");
             setPlacingOrder(false);
         }
     };
