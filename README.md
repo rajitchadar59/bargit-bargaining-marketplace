@@ -198,8 +198,8 @@ The master oversight panel for platform-wide administration.
 **Server-Side:** Node.js, Express.js, MongoDB Atlas
 
 ```bash
-git clone [https://github.com/rajitchadar59/bargit-bargaining-marketplace.git]
-cd bargit-nearby-bargain-marketplace
+git clone https://github.com/rajitchadar59/bargit-bargaining-marketplace.git
+cd bargit-bargaining-marketplace
 
 # Backend
 cd backend && npm install && npm start
