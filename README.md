@@ -198,7 +198,7 @@ The master oversight panel for platform-wide administration.
 **Server-Side:** Node.js, Express.js, MongoDB Atlas
 
 ```bash
-git clone [https://github.com/rajitchadar59/bargit-nearby-bargain-marketplace.git](https://github.com/YOUR_GITHUB_USERNAME/bargit-nearby-bargain-marketplace.git)
+git clone [https://github.com/rajitchadar59/bargit-bargaining-marketplace.git]
 cd bargit-nearby-bargain-marketplace
 
 # Backend
