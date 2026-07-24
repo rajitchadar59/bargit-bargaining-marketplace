@@ -147,32 +147,30 @@
 
 
 
-/* =========================================
-   🌟 AUTH BUTTONS (LOG IN / SIGN UP) 🌟
-========================================= */
+
 .auth-buttons-group {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* Log In Button - Minimalist */
+
 .nav-btn-outline {
     background: transparent;
     color: #0A0E17;
     border: none;
     padding: 8px 12px;
-    font-size: 0.88rem; /* Font size baaki links ke barabar */
+    font-size: 0.88rem; 
     font-weight: 700;
     cursor: pointer;
     border-radius: 8px;
 }
 
 .nav-btn-outline:hover {
-    color: #FF2E63; /* Hover par text pink hoga */
+    color: #FF2E63; 
 }
 
-/* Sign Up Button - Solid Color */
+
 .nav-btn-solid {
     background: #FF2E63;
     color: white;
@@ -191,8 +189,60 @@
     
 }
 
-/* Responsive (Mobile me thoda chota) */
+
 @media (max-width: 768px) {
   .auth-buttons-group { gap: 5px; }
   .nav-btn-outline, .nav-btn-solid { padding: 6px 12px; font-size: 0.8rem; }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1150px) {
+
+   .welcome-text { display: none; }
+}
+@media (max-width: 992px) {
+  .nav-search-container { max-width: 250px; margin: 0 10px; }
+  .dash-links { gap: 10px; }
+   .welcome-text { display: none; }
+}
+
+@media (max-width: 768px) {
+  .dash-nav-container { 
+    flex-wrap: wrap; 
+    padding: 10px 15px; 
+    gap: 10px; 
+    justify-content: space-between;
+  }
+  
+  .dash-logo { font-size: 1.3rem; }
+  .welcome-text { display: none; }
+  
+  .nav-link { 
+    font-size: 0 !important; 
+    padding: 8px 12px;
+    gap: 0;
+    justify-content: center;
+  }
+  
+  .nav-link svg {
+    width: 22px !important;
+    height: 22px !important;
+  }
+  
+  .auth-buttons-group { gap: 8px; }
+  .nav-btn-outline, .nav-btn-solid { padding: 8px 12px; font-size: 0.8rem; }
+  
+  .nav-search-container {
+    order: 3; 
+    max-width: 100%;
+    margin: 5px 0 0 0;
+    padding: 8px 15px;
+  }
 }

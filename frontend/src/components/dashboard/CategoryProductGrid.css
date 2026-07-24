@@ -339,3 +339,75 @@
 .cat-btn-buy:hover {
     background: #d97706;
 }
+
+
+
+
+@media (max-width: 992px) {
+    .cat-product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .cat-top-tabs { 
+        flex-direction: row; 
+        flex-wrap: nowrap;
+        overflow-x: auto; 
+        gap: 12px; 
+        padding-bottom: 5px;
+    }
+    
+    .cat-top-tabs::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .cat-pill-container { 
+        display: flex;
+        gap: 8px; 
+        flex-shrink: 0; 
+    }
+    
+    .cat-tab, .cat-pill { 
+        font-size: 0 !important; 
+        padding: 10px; 
+        min-width: 44px;
+        justify-content: center;
+    }
+    
+    .cat-tab svg, .cat-pill svg {
+        margin: 0 !important;
+        font-size: 22px !important; 
+    }
+
+    .cat-product-grid { 
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+        gap: 12px; 
+        padding-bottom: 80px;
+    }
+    
+    .cat-ecom-card { border-radius: 8px; }
+    
+    .cat-image-box { height: 130px; } 
+    .cat-image-box img { padding: 8px; }
+
+    .cat-content-box { padding: 10px; }
+    .cat-prod-title { font-size: 0.85rem; height: 2.6em; margin-bottom: 5px; }
+    .cat-price-val { font-size: 1.05rem; }
+    .cat-vendor-tag { font-size: 0.7rem; margin-bottom: 8px; }
+
+    .cat-btn-bargain, .cat-btn-cart, .cat-btn-buy { 
+        font-size: 0.75rem; 
+        padding: 8px; 
+        border-radius: 6px;
+    }
+    
+    .cat-btn-split { 
+        flex-direction: column; 
+        gap: 6px; 
+    }
+}
+
+@media (max-width: 380px) {
+    .cat-product-grid { grid-template-columns: 1fr; } 
+}

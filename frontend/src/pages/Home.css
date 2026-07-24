@@ -292,3 +292,75 @@
         text-align: center !important;
     }
 }
+
+
+
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+@media (max-width: 500px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-section,
+  .info-section,
+  .stats-section,
+  .query-split-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .stats-section {
+    grid-template-columns: 1fr;
+  }
+
+  .info-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .query-split-card {
+    flex-direction: column;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .query-left-box,
+  .query-right-form {
+    width: 100%;
+    padding: 20px 12px;
+  }
+
+  .hero-title {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-main,
+  .btn-ghost {
+    width: 100%;
+  }
+
+  .benefit-dot {
+    left: -10px;
+  }
+
+  img, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}

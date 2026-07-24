@@ -557,7 +557,6 @@
   cursor: pointer;
 }
 
-/* Inline Form inside Modal */
 .addr-form-inline input,
 .addr-form-inline textarea {
   width: 100%;
@@ -579,3 +578,87 @@
   justify-content: flex-end;
   margin-top: 10px;
 }
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .amazon-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+
+  .top-tabs { 
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    gap: 12px; 
+    padding-bottom: 5px;
+  }
+  
+  .top-tabs::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .pill-container { 
+    display: flex;
+    gap: 8px; 
+    flex-shrink: 0; 
+  }
+  
+ 
+  .pill, .tab { 
+    font-size: 0 !important; 
+    padding: 10px; 
+    min-width: 44px; 
+    justify-content: center;
+  }
+  
+  .pill svg, .tab svg {
+    margin: 0 !important;
+    font-size: 22px !important;
+  }
+
+  .amazon-grid { 
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
+    gap: 12px; 
+    padding-bottom: 80px;
+  }
+  
+  .ecom-card { border-radius: 8px; }
+  
+  .image-box { height: 140px; } 
+  .image-box img { padding: 8px; }
+
+  .content-box { padding: 10px; }
+  .prod-title { font-size: 0.85rem; height: 2.6em; margin-bottom: 5px; }
+  .price-val { font-size: 1rem; }
+  .vendor-location-tag { font-size: 0.7rem; margin-bottom: 8px; }
+
+  .btn-main-bargain, .btn-split-cart, .btn-split-buy { 
+    font-size: 0.75rem; 
+    padding: 8px; 
+    border-radius: 6px;
+  }
+  
+  .loc-modal-box { width: 90%; max-height: 80vh; }
+  .bk-grid-2 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 380px) {
+  .amazon-grid { grid-template-columns: 1fr; } 
+}
+
+
+
+
+
+
+
+
+
+

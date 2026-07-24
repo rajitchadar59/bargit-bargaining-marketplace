@@ -416,3 +416,52 @@
     .br-won-state, .br-expired-state { flex-direction: column; gap: 15px; text-align: center; }
     .br-msg-bubble { max-width: 85%; }
 }
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .bargain-page { height: auto; overflow: auto; }
+    .bargain-container { padding: 15px; }
+    .br-grid { grid-template-columns: 1fr; height: auto; display: flex; flex-direction: column; gap: 15px;}
+    .br-product-card { flex-direction: row; height: auto; padding: 15px; align-items: center; border-radius: 16px; }
+    .br-prod-img { width: 80px; height: 80px; margin: 0 15px 0 0; padding: 5px; }
+    .br-prod-mrp { border: none; padding: 0; margin: 0;}
+    .br-rules { display: none; } 
+    .br-chat-col { height: 75vh; }
+    .br-won-state, .br-expired-state { flex-direction: column; gap: 15px; text-align: center; }
+    .br-msg-bubble { max-width: 85%; }
+}
+
+@media (max-width: 768px) {
+    .bargain-container { padding: 10px; }
+    .br-grid { gap: 10px; }
+    .br-chat-header { padding: 12px 15px; }
+    .br-chat-header h3 { font-size: 1.05rem; }
+    .br-status-badge { padding: 4px 10px; font-size: 0.7rem; }
+    .br-chat-box { padding: 15px; gap: 10px; }
+    .br-msg-bubble { max-width: 90%; font-size: 0.9rem; padding: 10px 15px; }
+    .br-chat-footer { padding: 12px 15px; }
+    .br-input-group { padding: 6px 6px 6px 15px; }
+    .br-input-group button { width: 38px; height: 38px; }
+    .timer-box { font-size: 1.1rem; }
+    .deal-price { font-size: 1.1rem; }
+    .btn-pay-now { padding: 10px 20px; font-size: 0.75rem; width: 100%; justify-content: center; }
+    .btn-outline { padding: 8px 15px; font-size: 0.8rem; width: 100%; }
+    .br-chat-col { height: 70vh; }
+}
+
+@media (max-width: 480px) {
+    .br-product-card { padding: 10px; border-radius: 12px; }
+    .br-prod-img { width: 65px; height: 65px; margin: 0 10px 0 0; padding: 4px; }
+    .br-prod-title { font-size: 1rem; margin-bottom: 4px; }
+    .br-prod-mrp { font-size: 0.8rem; }
+    .br-prod-mrp span { font-size: 0.95rem; }
+    .br-chat-col { height: 65vh; border-radius: 12px; }
+    .br-msg-bubble { max-width: 95%; }
+    .br-won-state, .br-expired-state { padding: 12px 15px; border-radius: 12px; }
+}
