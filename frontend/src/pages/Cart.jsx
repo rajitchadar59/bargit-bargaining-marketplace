@@ -5,7 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import server from '../environment';
 import DashNavbar from '../components/dashboard/DashNavbar';
 import { ShoppingBag, Trash2, Loader2, Plus } from 'lucide-react';
-import './cart.css';
+import './Cart.css';
 import CartRelatedProducts from '../components/CartRelatedProducts'
 import { customAlert } from '../utils/toastAlert';
 
