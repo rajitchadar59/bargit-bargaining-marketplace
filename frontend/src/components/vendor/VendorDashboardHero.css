@@ -1,7 +1,8 @@
-/* --- HERO SECTION BASE --- */
+
+
 .v-hero-full-width {
   width: 100%;
-  height: 450px;
+  min-height: 450px; /* BAS YAHAN height ki jagah min-height kiya hai */
   position: relative;
   overflow: hidden;
   display: flex;
@@ -9,7 +10,6 @@
   background: #0A0E17;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-
 
 .v-hero-slider-bg {
   position: absolute;
@@ -145,6 +145,45 @@
   .v-hero-stats { gap: 20px; flex-wrap: wrap; }
 }
 
+
+@media (max-width: 768px) {
+  /* Mobile par height adjust karne ke liye thodi padding */
+  .v-hero-full-width {
+    padding: 60px 0; 
+  }
+  
+  /* Mobile par side padding 40px se 20px kardi taaki jagah mile */
+  .v-hero-content {
+    padding: 0 20px;
+  }
+
+  .v-hero-content h1 { 
+    font-size: 2.2rem; 
+  }
+
+  .v-hero-glass-action-box {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px 0;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  /* Items ko properly align karne aur chote phone par wrap karne ke liye */
+  .v-glass-info-group { 
+    flex-wrap: wrap; 
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  /* Mobile par vertical line divider design kharab kar raha tha, isliye hide kiya */
+  .v-glass-divider {
+    display: none; 
+  }
+
+  .v-hero-action-btn { justify-content: center; }
+  .v-hero-stats { gap: 20px; flex-wrap: wrap; }
+}
 
 
 

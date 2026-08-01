@@ -163,3 +163,105 @@
   .v-nav-link { padding: 12px; }
   .v-text-info { display: none; }
 }
+
+
+/* ... KEEP ALL YOUR EXISTING CSS ABOVE THIS LINE ... */
+
+/* Mobile Toggle Hidden on Desktop */
+.v-mobile-toggle {
+  display: none;
+  cursor: pointer;
+  color: #0A0E17;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN FOR SCREENS < 1024px
+========================================== */
+@media (max-width: 1024px) {
+  .v-nav-container {
+    padding: 0 20px;
+    height: 60px; /* Fixed height to anchor the dropdown */
+  }
+
+  /* Show Hamburger Icon */
+  .v-mobile-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  /* Convert right section into a slide-down menu */
+  .v-right-section {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    
+    /* Animation setup */
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* When menu is open */
+  .v-right-section.mobile-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  /* Stack navigation links vertically */
+  .v-nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .v-nav-link {
+    padding: 14px 16px;
+    background: #f8fafc;
+    border-radius: 12px;
+    justify-content: flex-start;
+  }
+  
+  .v-nav-link:hover, .v-nav-link.active {
+    background: #fff1f2; /* Soft pink background on active/hover */
+  }
+
+  /* Adjust divider for horizontal orientation */
+  .v-nav-divider {
+    width: 100%;
+    height: 1px;
+    margin: 5px 0;
+  }
+
+  .v-user-section {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .v-account-trigger {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background: #f8fafc;
+    padding: 10px 16px;
+    border-radius: 12px;
+  }
+
+  .v-text-info {
+    align-items: flex-start;
+  }
+}
